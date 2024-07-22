@@ -1,0 +1,45 @@
+.container_main {
+  padding: 16px;
+}
+
+.container-banner {
+  justify-content: center;
+}
+
+.container_text_main p {
+  font-size: 16px;
+}
+
+.title_form {
+  font-size: 16px;
+}
+.shadow-card {
+  min-height: 100px;
+  max-width: 300px;
+}
+
+.text_alert_oferta {
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .container_main {
+    padding: 16px 20%;
+  }
+  .container-banner {
+    justify-content: space-between;
+  }
+  .container_text_main p {
+    font-size: 24px;
+  }
+  .title_form {
+    font-size: 28px;
+  }
+  .shadow-card {
+    min-height: 100px;
+    max-width: 500px;
+  }
+  .text_alert_oferta {
+    font-size: 20px;
+  }
+}

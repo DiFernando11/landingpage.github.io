@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.alert-container {
+  top: 44px;
+}
+
+.custom-alert {
+  margin-bottom: 10px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.flex-33 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+@keyframes slideOutX {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInX {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+.slide-in-x {
+  animation: slideInX 0.5s forwards;
+}
+
+.slide-out-x {
+  animation: slideOutX 0.5s forwards;
+}
+
+.toggle-btn-black-border .btn-outline-primary {
+  border: 2px solid black;
+}
+
+.toggle-btn-black-border .btn-outline-primary {
+  border: 2px solid #d3d3d3; /* Gris claro */
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pointer-none {
+  pointer-events: none;
+}
+.mw-alert {
+  max-width: 400px;
+}
+.background-image-racha {
+  background-image: url('./assets/racha-opacity.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.color_blue_name {
+  color: #3b5998;
+}
+
+.comentario-fijado {
+  right: -12px;
+  top: -18px;
+}
+
+.bg-red {
+  background-color: red !important;
+}
+.txt-red {
+  color: red !important;
+}
+
+.fs-8 {
+  font-size: 28px;
+}
+
+.fs-7 {
+  font-size: 20px;
+}
+
+.button-inscribirse {
+  background: red;
+  outline: none;
+  position: relative;
+  color: white;
+  border: none;
+  padding: 20px 0px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+.button-inscribirse:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.button-inscribirse:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 1em;
+  opacity: 0;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-inscribirse:hover div {
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.button-inscribirse div {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.usuarios-conectados {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  z-index: 1050;
+  background: rgba(40, 39, 39, 0.803);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 12, 12, 0.358);
+  width: 280px;
+}
+
+.image-oil-alert {
+  top: 28px;
+  left: 28px;
+}
+
+.shadow-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-alert-ganancias {
+  background-image: url('./assets/logoTr.JPG'); /* Reemplaza 'your-image-url.jpg' con el enlace a tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+.image-bottom-ganancias {
+  background-image: url('./assets/logoTr.JPG'); /* Reemplaza 'your-image-url.jpg' con el enlace a tu imagen */
+  background-repeat: repeat; /* Hacer que la imagen de fondo se repita */
+  background-size: auto; /* Mantener el tamaño original de la imagen */
+  background-position: top left;
+}
+
+.fs-min {
+  font-size: 12px;
+}
+
+.opacity-min {
+  opacity: 0.1;
+}
+
+.back-formulario {
+  width: 100%;
+  height: 250px;
+  max-width: 300px;
+}
+
+@keyframes textSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes textSlideOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.text-slide-in {
+  animation: textSlideIn 0.5s forwards;
+}
+
+.text-slide-out {
+  animation: textSlideOut 0.5s forwards;
+}
+
+.animated-button {
+  transition: opacity 0.5s, transform 0.5s;
+  min-width: 200px;
+  font-size: 20px !important;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s forwards;
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s forwards;
+}
+
+.inscripcion-form h2 {
+  color: #721c24;
+}
+
+.phone-input {
+  width: 100% !important;
+  padding-bottom: 28px !important;
+  padding-top: 28px !important;
+}
+
+.btn-primary {
+  background-color: #721c24;
+  border-color: #721c24;
+}
+
+.btn-primary:hover {
+  background-color: #5a1217;
+  border-color: #5a1217;
+}
+
+.floating-button {
+  right: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating-button.bounce {
+  animation: bounce 1s infinite;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.gradient-text {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#fcfafa, #ccc9c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sticky-position {
+  position: sticky;
+  top: 0;
+}

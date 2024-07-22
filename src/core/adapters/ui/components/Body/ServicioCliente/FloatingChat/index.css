@@ -1,0 +1,107 @@
+.floating-chat {
+  transition: transform 0.3s ease-in-out;
+  animation: slideInUp 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.message {
+  width: fit-content;
+  word-wrap: break-word;
+}
+.container-emisor {
+  flex-direction: row-reverse;
+}
+
+.container-sistema {
+  flex-direction: row;
+}
+
+.emisor {
+  background: #e2040423;
+  margin-left: auto;
+  /* text-align: end; */
+}
+
+/* Mensajes del Sistema */
+.sistema {
+  background-color: #f4f0f0c0;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.slide-in-y {
+  animation: slideIn 0.5s forwards;
+}
+
+.slide-out-y {
+  animation: slideOut 0.5s forwards;
+}
+
+/* styles.css */
+@keyframes blink {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.loading-dots span {
+  display: inline-block;
+  animation: blink 1.5s infinite;
+  margin: 0 2px;
+  font-size: 30px; /* Tamaño inicial de los puntos */
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.6s;
+}
